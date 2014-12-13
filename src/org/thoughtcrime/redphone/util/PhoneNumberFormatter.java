@@ -41,7 +41,7 @@ import java.util.Locale;
 public class PhoneNumberFormatter {
 
   public static boolean isValidNumber(String number) {
-    return number.matches("^\\+[0-9]{10,}");
+    return number.matches("^\\+[0-9]{9,}");
   }
 
   private static String impreciseFormatNumber(String number, String localNumber) {

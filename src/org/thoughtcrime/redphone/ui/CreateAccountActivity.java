@@ -205,12 +205,14 @@ public class CreateAccountActivity extends SherlockActivity {
 
       final String e164number = getConfiguredE164Number();
 
+      /* 
       if (!PhoneNumberFormatter.isValidNumber(e164number)) {
         Util.showAlertDialog(self,
                              getString(R.string.CreateAccountActivity_invalid_number),
                              String.format(getString(R.string.CreateAccountActivity_the_number_you_specified_s_is_invalid), e164number));
         return;
       }
+      */
 
       AlertDialog.Builder dialog = new AlertDialog.Builder(self);
       dialog.setMessage(String.format(getString(R.string.CreateAccountActivity_we_will_now_verify_that_the_following_number_is_associated),
